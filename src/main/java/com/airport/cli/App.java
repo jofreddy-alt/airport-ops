@@ -1,6 +1,7 @@
 package com.airport.cli;
 import com.airport.domain.*;
 import com.airport.service.GestionEmbarqueService;
+import javax.xml.transform.Source;
 public class App {
   public static void main(String[] args){
     GestionEmbarqueService svc = new GestionEmbarqueService();
@@ -13,5 +14,7 @@ public class App {
     System.out.println("Validación BP001: "+svc.validarBoardingPass(vuelo,"BP001"));
     svc.cerrarEmbarque(vuelo);
     System.out.println("Vuelo "+vuelo.getNumero()+" estado: "+vuelo.getEstado()+" puerta: "+vuelo.getPuerta().getCodigo());
+    System.out.println("Commit de prueba desde NetBeans");
   }
+    
 }
